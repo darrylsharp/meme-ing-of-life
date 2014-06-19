@@ -14,7 +14,7 @@ app.get('/', function(req, res){
       });
 });
 
-app.listen(3000);
+app.listen(process.env.PORT || 5000);
 console.log("Your app is running on Port 3000!");
 console.log("top thing", process.env.TOP)
 console.log("bottom thing"+ process.env.BOTTOM)
